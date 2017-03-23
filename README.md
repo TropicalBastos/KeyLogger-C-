@@ -6,3 +6,5 @@ Played around and made for fun. Made for educational purposes only, I don't take
 
 To compile:<br>
 `g++ logger.cpp -o logger.exe`
+<br>
+Then run the executable and see the magic!
