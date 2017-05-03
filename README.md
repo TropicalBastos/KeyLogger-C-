@@ -8,3 +8,5 @@ To compile:<br><br>
 `g++ logger.cpp -o logger.exe`
 <br><br>
 Then run the executable and see the magic!
+
+The logger.exe runs as a background hidden process and stores the keys in a keys.txt file in the directory of the logger.exe
