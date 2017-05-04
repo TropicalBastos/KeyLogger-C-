@@ -3,7 +3,7 @@
 #include<fstream> //std::fstream
 
 #ifndef IS_DOWN
-#define IS_DOWN 0x8000
+#define IS_DOWN 0x0001
 #endif
 
 using namespace std;
